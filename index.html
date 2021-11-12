@@ -21,7 +21,7 @@
         #editor {
             font-size: 15pt;
             padding: 0;
-            font-family: sans-serif;
+            font-family: arial, sans-serif;
             color: #444;
         }
         
@@ -36,6 +36,32 @@
         
         #title {
             margin: 4pt;
+        }
+        
+        #title>small {
+            font-weight: 400;
+        }
+        
+        header {
+            position: relative;
+            width: 100%;
+        }
+        
+        .credit {
+            transition: .5s;
+            padding: 4pt 16pt;
+            position: absolute;
+            right: 4pt;
+            bottom: 4pt;
+            font-size: 10pt;
+            color: #0003;
+            cursor: pointer;
+            margin-right: 16pt;
+            text-decoration: none;
+        }
+        
+        .credit:hover {
+            background: #0001;
         }
         
         #htmlinput {
@@ -58,7 +84,10 @@
 <body class="light">
     <div id="editor">
         <header>
-            <h2 id=title>Vivadita <small>lite</small></h2>
+            <h2 id=title>Vivadita
+                <small>lite</small>
+                <a href=https://github.com/carlosepcc class=credit>
+                    carlosepcc &nbsp; ↗</a></h2>
         </header>
         <main>
             <div>
