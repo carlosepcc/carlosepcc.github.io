@@ -9,39 +9,107 @@
 
     <!--END-REMOVABLE-->
     <style>
-        .body {
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #editor {
             font-size: 15pt;
-            padding: 2pt;
+            <<<<<<< HEAD padding: 2pt;
+            =======padding: 0;
+            font-family: arial, sans-serif;
+            color: #444;
+            >>>>>>>a2d8ed188cf92eb8254e50f48c367653558a654b
         }
         
         .dark {
             background-color: hsl(0, 0%, 20%);
-            color: hsl(0, 0%, 70%);
+            color: hsl(0, 0%, 80%);
+        }
+        
+        header {
+            padding-left: 16pt;
+        }
+        
+        #title {
+            margin: 4pt;
+        }
+        
+        #title>small {
+            font-weight: 400;
+        }
+        
+        header {
+            position: relative;
+            width: 100%;
+        }
+        
+        .credit {
+            transition: .5s;
+            padding: 4pt 16pt;
+            position: absolute;
+            right: 4pt;
+            bottom: 4pt;
+            font-size: 10pt;
+            color: #0003;
+            cursor: pointer;
+            margin-right: 16pt;
+            text-decoration: none;
+        }
+        
+        .credit:hover {
+            background: #0001;
+        }
+        
+        #htmlinput {
+            resize: both;
+            height: 40vh;
+            width: 100%;
+            font-family: monospace;
+            border: 0;
+            padding: 20pt 16pt;
+            font-size: 12pt;
+        }
+        
+        #output {
+            margin-top: 16pt;
+            height: 100vh
         }
     </style>
 </head>
 
 <body class="light">
-    <header>
-        <h1 id=title>Vivadita lite</h1>
-    </header>
-    <main>
-        <section>
-            <article>
-                <h2>Article 1</h2>
-                <p>Lorem paragraph ipsum dolor sit amet...</p>
-            </article>
-            <div>
-                <textarea class="dark" oninput=nextSibling.innerHTML=value style=resize:both;font-family:monospace;></textarea><span>Output</span>
-            </div>
-        </section>
+    <div id="editor">
+        <header>
+            <h2 id=title>Vivadita
+                <small>lite</small>
+                <a href=https://github.com/carlosepcc class=credit>
+                    carlosepcc &nbsp; ↗</a></h2>
+        </header>
         <main>
-            <aside>
-            </aside>
-            <footer>
-                <a href=# style="position:fixed;bottom:4px;right:8px;inset-block-end:4px;inset-inline-end:8px;">To start</a>
-            </footer>
+            <div>
+                <textarea id="htmlinput" class="dark" oninput="output.innerHTML=value" placeholder="Write your HTML code here.."></textarea>
+            </div>
+            <div id=output>
+                <center>Output</center>
+            </div>
+    </div>
+    </section>
+    <main>
+        <footer>
+            <a href=#htmlinput style="position:fixed;bottom:4px;right:8px;inset-block-end:4px;inset-inline-end:8px;">Editar</a>
+        </footer>
 
 </body>
+<script>
+    htmlinput = document.getElementById("htmlinput");
+
+    output = document.getElementById("output");
+</script>
 
 </html>
