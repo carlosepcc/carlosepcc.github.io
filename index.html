@@ -1,191 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <title>CV Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <style>
       body {
-        font-family: Roboto, Sans-serif;
-        background: hsl(0, 0%, 90%);
-      }
-
-      /* Font styles */
-      body {
-        font-family: "Helvetica Neue", sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        color: #333;
-      }
-
-      h1,
-      h2,
-      h3 {
-        font-weight: 700;
-        margin-top: 1.5em;
-        margin-bottom: 0.5em;
-      }
-
-      h1 {
-        font-size: 2.5em;
-      }
-
-      h2 {
-        font-size: 2em;
-      }
-
-      h3 {
-        font-size: 1.5em;
-      }
-
-      p,
-      ul {
-        margin-top: 0;
-        margin-bottom: 1em;
-      }
-
-      a {
-        color: #0077ff;
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-
-      a:hover {
-        color: #0055ff;
-      }
-
-      /* Layout styles */
-      body {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2em;
-      }
-
-      ul {
-        list-style: none;
-        padding-left: 0;
-      }
-
-      /* Header styles */
-      header {
-        display: flex;
-        align-items: center;
-      }
-
-      header img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-right: 1em;
-      }
-
-      /* Experience and education styles */
-      section {
-        margin-top: 2em;
-      }
-
-      section h2 {
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 0.5em;
-      }
-
-      section h3 {
-        margin-top: 0.5em;
-      }
-
-      section p {
-        margin-top: 0.5em;
-      }
-
-      /* Project styles */
-      section ul li {
-        margin-left: 1em;
-      }
-
-      /* Skills styles */
-      section ul {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      section ul li {
-        margin-right: 1em;
-        margin-bottom: 0.5em;
-        padding: 0.5em;
-        border-radius: 5px;
-        background-color: #eee;
-      }
-
-      /* Awards styles */
-      section p:last-of-type {
-        margin-bottom: 0;
-      }
-
-      /* Languages styles */
-      section ul:last-of-type {
-        margin-bottom: 0;
+        font-family: Roboto, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
       }
     </style>
-    <title>CV - Carlos Enrique Piñeiro Cárdenas</title>
   </head>
   <body>
-    <h1>Carlos Enrique Piñeiro Cárdenas</h1>
-    <h2>Ingeniero en Ciencias Informáticas</h2>
-    <h3>Desarrollador web especializado en frontend</h3>
-    <p>Idioma Español nativo e Inglés C1. Traductor. Actor. Profesor.</p>
-    <h3>Información de contacto:</h3>
+    <header>
+      <h1>Carlos Enrique Piñeiro Cárdenas</h1>
+      <p>
+        Computer Science Engineer. Frontend Web Developer. Native Spanish speaker and C2 English level. Translator, actor and professor.
+      </p>
+    </header>
+    <div class="container">
+      <section class="section">
+        <h2>Contact Information</h2>
+        <ul>
+          <li>
+            <a target="_blank" href="tel:+5355062672">(+53) 55 062 672</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/carlosepcc"
+              >GitHub: carlosepcc</a
+            >
+            <li>
+          <li>
+            <a target="_blank" href="https://t.me/carlosepc"
+              >Telegram: carlosepc</a
+            >
+            <li>
+              <a target="_blank" href="https://linkedin.com/in/carlosepccc"
+              >Linkedin: carlosepccc</a
+              >
+            </li>
+          </li>
+          <li>
+            <a target="_blank" href="mailto:carlosepcardenas@gmail.com"
+              >carlosepcardenas@gmail.com
+            </a>
+          </li>
+        </ul>
+        <br />
+        <p><a target="_blank" href="https://linktr.ee/carlosepc">more...</a></p>
+      </section>
+      <section class="section">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            UCI, Teaching — Artificial Intelligence Professor, February 2023 -
+            Present
+          </li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            University of Computer Sciences, Havana — Computer Science Engineer,
+            September 2017 - December 2022
+          </li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <p>
+              2022<br />
+              <strong>CDIS</strong> — Disciplinary Commission Process Management
+              System. <br /><b>Technologies used: </b>VueJS, Quasar Framework,
+              Axios, TypeScript, Pinia.
+            </p>
+          </li>
+          <li>
+            <p>
+              <br />2020<br />
+              <strong>GESAT</strong> — Technical Productive Activities
+              Management System.
+              <br />
+              <b>Technologies used:</b> VueJS, Quasar Framework, Axios,
+              JavaScript
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Languages</h2>
+        <ul>
+          <li>Spanish (Native)</li>
+          <li>English (C2)</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Web Development</li>
+          <li>Frontend</li>
+          <li>VueJS</li>
+          <li>Vue 3</li>
+          <li>Quasar Framework</li>
+          <li>Vuetify</li>
+          <li>Pinia</li>
+          <li>JavaScript, TypeScript</li>
+          <li>HTML, HTML5, Pug</li>
+          <li>CSS, SASS, SCSS</li>
+          <li>UI Design</li>
+          <li>UX Design</li>
+        </ul>
+      </section>
+      <!-- <section class="section">
+        <h2>Awards</h2>
+        <ul>
+          <li>Male Acting Awards in Amateur Theatre Events</li>
+        </ul>
+      </section> -->
+    </div>
+<footer>
+  <nav>
     <ul>
-      <li>Teléfono: (+53) 55 062 672</li>
-      <li>Email: carlosepcardenas@gmail.com</li>
-      <li>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/carlosepccc"
-          >linkedin.com/in/carlosepccc</a
-        >
-      </li>
-      <li>
-        Todos los datos en:
-        <a href="https://linktr.ee/carlosepc">linktr.ee/carlosepc</a>
-      </li>
+      <li><a href="https://t.me/carlosepc"><i class="fab fa-telegram"></i>Telegram</a></li>
+      <li><a href="https://linkedin.com/in/carlosepccc"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+      <li><a href="https://github.com/carlosepcc"><i class="fab fa-github"></i>GitHub</a></li>
     </ul>
-    <h2>EXPERIENCIA</h2>
-    <h3>UCI, Docencia — Profesor de Inteligencia Artificial</h3>
-    <p>FEBRERO DE 2023 - PRESENTE</p>
-    <p>Formación de futuros ingenieros en ciencias informáticas.</p>
-    <h2>EDUCACIÓN</h2>
-    <h3>
-      Universidad de las Ciencias Informáticas, La Habana — Ing. en Ciencias
-      Informáticas
-    </h3>
-    <p>SEPTIEMBRE DE 2017 - DICIEMBRE DE 2022</p>
-    <p>Graduado con máxima puntuación en proyecto de grado.</p>
-    <h2>PROYECTOS</h2>
-    <h3>
-      2022 - CDIS — Sistema de Gestión del Proceso de Comisión Disciplinaria
-    </h3>
-    <p>Tecnologías usadas: VueJS, Quasar Framework, Axios, TypeScript, Pinia</p>
-    <h3>
-      2020 - GESAT — Sistema de Gestión de Actividades Técnicas Productivas
-    </h3>
-    <p>Tecnologías usadas: VueJS, Quasar Framework, Axios, JavaScript</p>
-    <h2>HABILIDADES</h2>
-    <ul>
-      <li>Desarrollo web</li>
-      <li>Frontend</li>
-      <li>VueJS</li>
-      <li>Vue 3</li>
-      <li>Quasar Framework</li>
-      <li>Vuetify</li>
-      <li>Pinia</li>
-      <li>JavaScript, TypeScript</li>
-      <li>HTML, HTML5, Pug</li>
-      <li>CSS, SASS, SCSS</li>
-      <li>Diseño de UI</li>
-      <li>Diseño de UX</li>
-    </ul>
-    <h2>RECONOCIMIENTOS</h2>
-    <p>Premios de actuación masculina en eventos de teatro amateur.</p>
-    <h2>IDIOMAS</h2>
-    <ul>
-      <li>Español (nativo)</li>
-      <li>Inglés (C2)</li>
-    </ul>
-  </body>
+  </nav>
+</footer>
+</body>
 </html>
