@@ -12,9 +12,10 @@ header {
     background-color: #334;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 4em 20px;
 }
 header>p{
+    margin-top:1em;
     color:#fffc;
 }
 li {
@@ -26,7 +27,7 @@ a{
     border-radius: 4px;
     padding:4px 8px;
 }
-a:hover{
+#contact-info-section li a:hover{
     /* text-decoration: underline; */
     background: #0001;
 }
@@ -73,6 +74,8 @@ li {
 }
 
 .skills {
+    max-width:800px;
+    margin-inline:auto;
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
@@ -81,8 +84,8 @@ li {
 }
 
 .skills li {
-    background-color: #556;
-    color: #fffd;
+    background-color: #dde6;
+    color: #444;
     font-weight: 600;
     margin: 5px;
     padding: 10px 12px;
