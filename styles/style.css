@@ -1,4 +1,5 @@
 body {
+    font-size: 15pt;
     font-family: Roboto, sans-serif;
     background-color: #f2f2f2;
     margin: 0;
@@ -17,15 +18,19 @@ header {
 header>p{
     margin-top:1em;
     color:#fffc;
+    font-size: large;
 }
 li {
     margin-block: 8px;
 }
 a{
     text-decoration: none;
-    color: rgb(7, 79, 152);
+    color: hsl(250,50%,30%);
     border-radius: 4px;
     padding:4px 8px;
+}
+a:hover{
+    text-decoration: underline;
 }
 #contact-info-section li a:hover{
     /* text-decoration: underline; */
@@ -54,13 +59,14 @@ h2 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    font-weight: normal;
+    font-weight: 300;
+    color:#001a;
 }
 
 p {
     margin: 0;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 15pt
 }
 
 ul {
