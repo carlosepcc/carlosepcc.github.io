@@ -20,6 +20,13 @@ header>p{
     color:#fffc;
     font-size: large;
 }
+#hireme{
+    width:90%;
+    max-width:300px;
+    margin-top:32px;
+    padding:8px;
+    cursor:pointer;
+}
 li {
     margin-block: 8px;
 }
