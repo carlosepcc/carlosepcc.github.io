@@ -126,3 +126,6 @@ nav a {
 .flex {
   display: flex;
 }
+section {
+  overflow: auto;
+}
